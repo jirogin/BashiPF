@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes">
+    <!-- bashisyoukai.cssを読み込み-->
+    <link rel="stylesheet" href="./bashisyoukai.css">
+    <link rel="stylesheet" href="slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="slick.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="bashisyoukai.js"></script>
+    <script src="slick.js"></script>
+    <title>自己紹介サイト</title>
+</head>
+
+<body>
+    <!--startクラスを作成-->
+    <div class="start">
+        <!--サイトを開いた時一番最初にフェードして表示される画像を設定-->
+        <p><img src="image/bashisabout0.png"></p>
+    </div>
+
+    <!--サイトのヘッダ画像を設定-->
+    <header>
+        <img src="image/bashisaboutC.png" id="header">
+    </header>
+
+    <!--topクラスを作成-->
+    <div class="top">
+    </div>
+
+    <!--タグをまとめたタグ mainタグを作成-->
+    <div class="main">
+
+        <!--innerタグを作成-->
+        <div id="inner" class="inner">
+            <!--h2タグで小見出しを作成-->
+            <h2>introduction</h2>
+            <!--グレーのラインを引く-->
+            <hr class="grey-line">
+
+            <div class='container'>
+                <div class='single-item'>
+                    <!--自己紹介画像を貼る-->
+                    <img src="./image/kiseki1.jpg" width="37.5%" height="25%" class="main-img">
+                    <img src="./image/show2.jpg" width="37.5%" height="25%" class="main-img">
+                    <img src="./image/show3.jpg" width="37.5%" height="25%" class="main-img">
+                    <img src="./image/show4.jpg" width="37.5%" height="25%" class="main-img">
+                    <img src="./image/show6.jpg" width="37.5%" height="25%" class="main-img">
+                    <img src="./image/photo3.JPG" width="37.5%" height="25%" class="main-img">
+                    <img src="./image/S__7528457.jpg" width="37.5%" height="25%" class="main-img">
+                    <img src="./image/kiseki2.jpg" width="37.5%" height="25%" class="main-img">  
+                </div>
+            </div>
+
+            <!--pタグで文章を打ち込む-->
+            <p id="syoukai">
+                N高等学校に在学中の高校1年生
+                <!--brタグで改行-->
+                <br />
+                現在はプログラミング(主にフロントエンド)や基本情報技術者等の資格勉強をしている。
+                <br />
+                また、子ども食堂のボランティアへの参加や
+                <br />
+                クリエイタスマガジンコレクションにモデルとして出演するなど多方面で活動中。
+            </p>
+
+            <!--tableを作成-->
+            <table class="about">
+                    <!--表の1行め-->
+                    <!--囲まれた部分が行になる-->
+                    <tr>
+                    <!--囲まれた部分が見出しセルになる-->
+                        <th>[Name]</th>
+                    <!--囲まれた部分が通常セルになる-->
+                        <td>石橋 勇舞</td>
+                    </tr>
+                    <!--表の2行目-->
+                    <tr>
+                        <th>[From]</th>
+                        <td>大阪府</td>
+                    </tr>
+                    <!--表の3行目-->
+                    <tr>
+                        <th>[Hobby]</th>
+                        <td>サイクリング/服探し/モデル</td>
+                    </tr>
+                    <tr>
+                        <th>[Qualification]</th>
+                        <td>ITパスポート</td>
+                    </tr>
+                </table>
+            　<!--グレーのラインを引く-->
+            <hr class="grey-line">
+
+            <!--id,class skillsを作成-->
+            <div id="skills" class="skills">
+                <!--小見出しSkillsを作成-->
+                <h2>Skills</h2>
+                <!--スキルをレーダーチャート化した画像を貼り付け width height で横幅と縦幅調整-->
+                <img src="./image/skillgraph102.png" width="56.25%" height="37.5%" id="chart">
+                </div>
+
+                <!--グレーのラインを引く-->
+                <hr class="grey-line">
+
+                <!--id class creationを作成-->
+            <div id="creation" class="creation">
+                <!--小見出し Creationを作成-->
+                <h2>Creation</h2>
+
+                <!--id creation1を作成-->
+                <div id="creation1">
+                
+                <!--咲く生物の例としてトラソルログイン画面の画像を貼り付け、width height で横幅、縦幅を調整-->
+                <img src="./image/syoukaidesign.png" width="40%" height="40%" >
+                <!--pタグで文字列入力-->
+                <p>悩み相談サイト"トラソル"ログイン画面デザイン作成　　-Adobe Xd</p>
+                </div>
+
+                <!--id creation2を作成-->
+                <div id="creation2">
+                <!--imgタグで画像を貼り付け、横幅縦幅調整-->
+                <img src="./image/kyoudou.png" width="40%" height="40%">
+                <p>共同ポートフォリオ作成　　-HTML5, CSS3</p>
+                </div> 
+
+            </div>
+
+            <hr class="grey-line">
+
+            <div id="contact" class="contact">
+                <h2>Contact</h2>
+
+                <a href="https://twitter.com/AIUsullivan" target="_blank" rel="noopener">
+                    <img src="./image/Twitter0.png" id="twitter">
+                </a>
+
+                <a href="https://www.facebook.com/profile.php?id=100012896296863" target="_blank" rel="noopener">
+                    <img src="./image/facebook0.png" id="facebook">
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!--topへ戻るボタン-->
+
+        <!--cssと連携-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
+        <!--id page_topを設定 ボタンに表示する文字列 PAGE TOP を設定-->
+        <p id="page_top"><a href="#wrap">PAGE TOP</a></p>
+
+        <!--グレーのラインを引く-->
+        <hr class="grey-line">
+    <!--footer-->
+    <footer>
+        <!--"&copy; "とかくと©︎になる-->
+        <p>© 2019 BASHI All rights reserved.</p>
+    </footer>
+</body>
+</html>
