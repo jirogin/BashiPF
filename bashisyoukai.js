@@ -1,3 +1,4 @@
+//top-btn
 $(function() {
     var topBtn = $('#page_top');  
     //topボタンは初期状態では隠れた状態にしておく  
@@ -28,18 +29,27 @@ $(function() {
         } else {
             header.fadeIn();
         }
+    }); 
+
+    var header = $("#bashis")
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 10) {
+            header.fadeOut();
+        } else {
+            header.fadeIn();
+       }
     });
 
-    var chart = $("#chart")
+    var skills = $(".skills")
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 500) {
-            chart.fadeIn();
+        if ($(this).scrollTop() > 70) {
+            skills.fadeIn();
         } else {
-            chart.fadeOut();
+            skills.fadeOut();
         }
     })
 
-    var creation1 = $("#creation1")
+    var creation1 = $("#one")
     $(window).scroll(function () {
         if ($(this).scrollTop() > 1000) {
             creation1.fadeIn();
@@ -48,12 +58,21 @@ $(function() {
         }
     })
 
-    var creation2 = $("#creation2")
+    var creation2 = $("#two")
     $(window).scroll(function () {
         if ($(this).scrollTop() > 1500) {
             creation2.fadeIn();
         } else {
             creation2.fadeOut();
+        }
+    })
+
+    var creation3 = $("#three")
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 2000) {
+            creation3.fadeIn();
+        } else {
+            creation3.fadeOut();
         }
     })
 
@@ -67,23 +86,16 @@ $(function() {
         });
       });
 
-    $(function() {
-        setTimeout(function(){
-            $('.start p').fadeIn(1600);
-        },500); //0.5秒後にロゴをフェードイン!
-        setTimeout(function(){
-            $('.start').fadeOut(2000);
-        },2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
-    });
+    
 
-    // var syoukai = $("#syoukai")
-    // syoukai.css('visibility','hidden');
-    // $(window).scroll(function() {
-    //     if ($(this).scrollTop() > 300) {
-    //         syoukai.fadeIn();
-    //         syoukai.css('visibility','visible');
-    //     } else {
-    //         syoukai.css('visibility','hidden');
-    //     }
-    // })
+    //open-start
+     $(function() {
+         setTimeout(function(){
+             $('.start p').fadeIn(1600);
+         },240); //0.25秒後にロゴをフェードイン!
+         setTimeout(function(){
+             $('.start').fadeOut(2000);
+         },500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+     });
+
 });

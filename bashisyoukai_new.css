@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+
+@media screen and (min-width: 767px) { /*ウィンドウ幅が867px以上の場合に適用*/
+  html, body{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.8);
+    max-width: 1440px;
+    max-height: 100vh;
+    padding: 0;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    position: relative;
+    background-size: cover;
+  }
+  
+  *{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    letter-spacing: 2px;
+    line-height: 150%;
+  }
+  
+  hr{
+    color: grey;
+    margin: auto;
+    width: 80%;
+  }
+  
+  section{
+    width: 100%;
+  }
+  
+  .section-content{
+    max-width: 1000px;
+    margin: 0 auto;
+    /*padding: 40px 60px;*/
+    text-align: center;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  /*header*/
+  
+  
+  /*sec-1*/
+  .section1{
+    position: relative;
+  }
+  
+  .section1 .container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  video {
+    z-index: -100;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .section1 h1{
+    color: white;
+    font-size: 100px;
+  }
+  
+  .sec-1-Title{
+    position: relative;
+    right: -50px;
+  }
+  
+  .whenbox{
+    margin: 20px 0;
+    position: absolute;
+    top: 0;
+    right: 55px;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  /*sec-2*/
+  .section2{
+    position: relative;
+  }
+  
+  .section2 .container{
+    height: 100vh;
+    background-color: white;
+  }
+  
+  .sec-2-Title{
+    padding-top: 50px;
+  }
+  
+  .me{
+    margin: 50px 50px 20px 50px;
+    width: 20vw;
+    box-shadow: 0 2px 30px #999;
+    border-radius: 50%;
+  }
+  
+  .sec2-text{
+    display: inline-block;
+    text-align: left;
+    padding-top: 50px;
+  }
+  
+  .birth{
+    float: left;
+    position: relative;
+    width: 5%;
+    margin-top: -400px;
+  }
+  
+  /*sec-3*/
+  .section3{
+    position: relative;
+  }
+  
+  .section3 .container{
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .oneArea {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 35%;
+    width: 40%;
+    background: #f4f5f7;
+    box-shadow: 0 2px 10px #999;
+    position: relative;
+    margin: 20px 20px;
+  }
+  
+  .oneArea:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 30px #555;
+  }
+  
+  .oneArea .oneBox {
+    width: 45%;
+    margin-right: 1%;
+    border: 3px solid #111;
+    background: #fff;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 20px;
+    color: #000;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .oneArea p{
+    padding-top: 15px;
+    font-size: 14px;
+  }
+  
+  .oneArea img{
+    width: 80%;
+  }
+  
+  /*sec-4*/
+  .section4{
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .section4 .container{
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .section4 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+  }
+  
+  .sec4-Title{
+    padding-top: 50px;
+  }
+  
+  .contact{
+    position: relative;
+    top: 200px;
+  }
+  
+  .contact a{
+    text-decoration: none;
+  }
+  
+  #twitter, #facebook{
+    /* スキル同士を横に並べる */
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    width: 12%;
+  }
+  
+  #insta{
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    width: 13%;
+  }
+  
+  #twitter:hover, #facebook:hover, #insta:hover{
+    box-shadow: 0 2px 10px #999;
+    border-radius: 25%;
+  }
+  
+  .mailtoMe:hover{
+    color: #fff;
+    text-shadow: 0 2px 10px #000;
+  }
+  
+  footer{
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  footer p{
+    font-size: 16px;
+    font-weight: lighter;
+    top: 18px;
+  }
+  
+  
+  /*top-button*/
+  #page_top {
+    position: fixed;
+    bottom: 55px;
+    left: 30px;
+    font-size: 77%;
+    z-index: 1;
+  }
+  #page_top a {
+    background: #666;
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    padding: 30px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+  }
+  #page_top a:hover {
+    text-decoration: none;
+    background: #999;
+    z-index: 3;
+  }
+  
+  /*scroll-down*/
+  /* キャンパス設定 */
+  
+  .box {
+    width: 100px;
+    height: 300px;
+    margin: 0;
+    border-radius: 5px;
+    position: relative;
+    bottom: -200px;
+    overflow: hidden;
+  }
+  
+  .box p{
+    color: white;
+  }
+  
+  /* アニメーション設定 */
+  .arrowWrap {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 200px
+  }
+  
+  .arrowInner p {
+    font-size: 12px;
+    text-align: end;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  
+  .arrow {
+    width: 1px;
+    height: 100px;
+    margin: 50px auto 0;
+    background-color: #eee;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .arrow::before {
+    content: '';
+    width: 1px;
+    height: 100px;
+    margin: 50px auto 0;
+    background-color: #000;
+    position: absolute;
+    top: -150px;
+    left: 0;
+    -webkit-animation: arrow 2.5s ease 0s infinite normal;
+    animation: arrow 2.5s ease 0s infinite normal;
+  }
+  
+  @keyframes arrow {
+    0% {
+      -webkit-transform: translate3d(-50%, 0, 0);
+      transform: translate3d(-50%, 0, 0);
+    }
+  
+    60% {
+      -webkit-transform: translate3d(-50%, 100px, 0);
+      transform: translate3d(-50%, 100px, 0);
+    }
+  
+    100% {
+      -webkit-transform: translate3d(-50%, 100px, 0);
+      transform: translate3d(-50%, 100px, 0);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
+  html, body{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.8);
+    max-width: 767px;
+    max-height: 100vh;
+    padding: 0;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    position: relative;
+    background-size: cover;
+  }
+  
+  *{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    letter-spacing: 2px;
+    line-height: 150%;
+  }
+  
+  hr{
+    color: grey;
+    margin: auto;
+    width: 80%;
+  }
+  
+  section{
+    width: 100%;
+  }
+  
+  .section-content{
+    max-width: 1000px;
+    margin: 0 auto;
+    /*padding: 40px 60px;*/
+    text-align: center;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  /*header*/
+  
+  /*sec-1*/
+  .section1{
+    position: relative;
+  }
+  
+  .section1 .container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  video {
+    z-index: -100;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .section1 h1{
+    color: white;
+    font-size: 60px;
+  }
+  
+  .sec-1-Title{
+    position: relative;
+    right: -30px;
+  }
+  
+  .whenbox{
+    margin: 20px 0;
+    position: absolute;
+    top: 0;
+    right: 55px;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  /*sec-2*/
+  .section2{
+    position: relative;
+  }
+  
+  .section2 .container{
+    height: 100vh;
+    background-color: white;
+  }
+  
+  .sec-2-Title{
+    padding-top: 50px;
+  }
+  
+  .me{
+    margin: 50px 50px 20px 50px;
+    width: 30vw;
+    box-shadow: 0 2px 10px #999;
+    border-radius: 50%;
+  }
+
+  .sec2-t-box{
+    margin: 0 auto;
+    width: 70%;
+  }
+  
+  .sec2-text{
+    display: inline-block;
+    text-align: left;
+    padding-top: 20px;
+    font-size: 12px;
+  }
+  
+  .birth{
+    float: left;
+    position: relative;
+    width: 7%;
+    margin-top: -250px;
+  }
+  
+  /*sec-3*/
+  .section3{
+    position: relative;
+  }
+  
+  .section3 .container{
+    height: auto;
+    background-color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .oneArea {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 200px;
+    width: 300px;
+    background: #f4f5f7;
+    box-shadow: 0 2px 10px #999;
+    position: relative;
+    margin: 20px 20px;
+  }
+  
+  .oneArea:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 10px #555;
+  }
+  
+  .oneArea .oneBox {
+    width: 45%;
+    margin-right: 1%;
+    border: 3px solid #111;
+    background: #fff;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 20px;
+    color: #000;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .oneArea p{
+    padding-top: 15px;
+    font-size: 10px;
+  }
+  
+  .oneArea img{
+    width: 80%;
+    height: 70%;
+  }
+  
+  /*sec-4*/
+  .section4{
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .section4 .container{
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .section4 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+  }
+  
+  .sec4-Title{
+    padding-top: 50px;
+  }
+  
+  .contact{
+    position: relative;
+    top: 200px;
+  }
+  
+  .contact a{
+    text-decoration: none;
+  }
+  
+  #twitter, #facebook{
+    /* スキル同士を横に並べる */
+    display: inline-block;
+    padding: 5px;
+    margin: 20px;
+    width: 18%;
+  }
+  
+  #insta{
+    display: inline-block;
+    padding: 5px;
+    margin: 20px;
+    width: 20%;
+  }
+  
+  #twitter:hover, #facebook:hover, #insta:hover{
+    box-shadow: 0 2px 5px #999;
+    border-radius: 25%;
+  }
+  
+  .mailtoMe:hover{
+    color: #fff;
+    text-shadow: 0 2px 10px #000;
+  }
+  
+  footer{
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  footer p{
+    font-size: 16px;
+    font-weight: lighter;
+    top: 18px;
+  }
+  
+  
+  /*top-button*/
+  #page_top {
+    position: fixed;
+    bottom: 55px;
+    left: 10px;
+    font-size: 60%;
+    z-index: 1;
+  }
+  #page_top a {
+    background: #666;
+    text-decoration: none;
+    color: #fff;
+    width: 80px;
+    padding: 20px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+  }
+  #page_top a:hover {
+    text-decoration: none;
+    background: #999;
+    z-index: 3;
+  }
+  
+  /*scroll-down*/
+  /* キャンパス設定 */
+  
+  .box {
+    width: 100px;
+    height: 300px;
+    margin: 0;
+    border-radius: 5px;
+    position: relative;
+    bottom: -200px;
+    overflow: hidden;
+  }
+  
+  .box p{
+    color: white;
+  }
+  
+  /* アニメーション設定 */
+  .arrowWrap {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 200px
+  }
+  
+  .arrowInner p {
+    font-size: 12px;
+    text-align: end;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  
+  .arrow {
+    width: 1px;
+    height: 100px;
+    margin: 50px auto 0;
+    background-color: #eee;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .arrow::before {
+    content: '';
+    width: 1px;
+    height: 100px;
+    margin: 50px auto 0;
+    background-color: #000;
+    position: absolute;
+    top: -150px;
+    left: 0;
+    -webkit-animation: arrow 2.5s ease 0s infinite normal;
+    animation: arrow 2.5s ease 0s infinite normal;
+  }
+  
+  @keyframes arrow {
+    0% {
+      -webkit-transform: translate3d(-50%, 0, 0);
+      transform: translate3d(-50%, 0, 0);
+    }
+  
+    60% {
+      -webkit-transform: translate3d(-50%, 100px, 0);
+      transform: translate3d(-50%, 100px, 0);
+    }
+  
+    100% {
+      -webkit-transform: translate3d(-50%, 100px, 0);
+      transform: translate3d(-50%, 100px, 0);
+    }
+  }
+}

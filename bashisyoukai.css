@@ -1,22 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
 html, body{
-    background-color: #F4f5f7;
     color: #333;
     margin: 0;
     padding: 0;
     text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    position: relative;
+    background-size: cover;
 }
 
 * {
     box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 
-h2, p{
+h2{
     color: #555;
+    padding: 20px;
+}
+
+h2#skills {
+    padding-top: 60px;
+}
+
+p, a{
+    color: #555;
+    padding: 10px;
 }
 
 tr, th, td {
-    color: #555;
+    color: #fff;
 }
+
+
+video {
+    z-index: -100;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+} 
 
 header{
     position: sticky;
@@ -42,6 +73,27 @@ header li {
     padding: 0 20px;
 }
 
+.top {
+    position: fixed;
+  width: 100%;
+  text-align: center;
+  color: white;
+  transition: 0.4s;
+  min-height: 100vh;
+}
+
+.top:hover {
+    background: rgba(255, 255, 255, 0);
+    color: #000;
+    min-height: 100vh;
+  }
+
+nav a {
+   text-decoration: none;
+   color: inherit;
+   padding: 1rem;
+}
+
 .inner{
     font-size:18px;
 }
@@ -52,7 +104,10 @@ header li {
 }
 
 .skills{
-    background-color: #f4f5f7;
+    padding: 0px;
+}
+
+h2.skills {
     padding: 0px;
 }
 
@@ -78,14 +133,37 @@ footer p{
 
 table.about{
     border-spacing: 10px;
+    color: #fff;
+    margin: 0 0 30 0px;
 }
 
-#twitter, #facebook {
+
+#twitter, #facebook{
     /* スキル同士を横に並べる */
     display: inline-block;
     padding: 20px;
     margin: 20px;
     width: 10%;
+}
+
+#insta{
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    width: 11%;
+}
+
+#one, #two{
+    /* スキル同士を横に並べる */
+    display: inline-block;
+    padding: 30px;
+    margin: 30px;
+}
+
+#three, #four{
+    display: inline-block;
+    padding: 30px;
+    margin: 30px;
 }
 
 /* #pagejump_demo .scroll_button a{
@@ -98,11 +176,19 @@ table.about{
     padding:20px;
 }　*/
 
+div#fashion {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
 #page_top {
     position: fixed;
     bottom: 20px;
     right: 20px;
     font-size: 77%;
+    z-index: 1;
 }
 #page_top a {
     background: #666;
@@ -117,14 +203,19 @@ table.about{
 #page_top a:hover {
     text-decoration: none;
     background: #999;
+    z-index: 3;
 }
 
 /* .creation {
     padding: 100px;
 } */
 
-#creation1, #creation2{
+/* #creation1, #creation2, #creation3, #creation4{
     padding: 30px 0px;
+} */
+
+#creation1 {
+    display: inline-block;
 }
 
 #chart {
@@ -133,15 +224,20 @@ table.about{
 
 .container {
     margin: 0 auto;
-    padding: 40px;
-    width: 35%;
-    color: #333;
+    padding: 20px;
+    width: 30%;
+    color: 555;
+    line-height: 0;
   }
   
   .slick-slide {
     text-align: center;
     background: white;
   }
+
+  /* .slick-slide img {
+      width: 100%;
+  } */
 
 .start {
 	background: #FFF;
@@ -163,4 +259,86 @@ table.about{
 .about {
     margin-left: auto;
     margin-right: auto;
+    color:#fff;
 }
+
+#syoukai {
+    color:#fff;
+}
+
+h2#introP {
+    /* background-image: url("./image/BG.jpg");
+    background-size: cover;  */
+    color:#fff; 
+}
+
+hr.style8 {
+	border-top: 1px solid #8c8b8b;
+	border-bottom: 1px solid #fff;
+}
+
+.page1 {
+    margin: 0;
+    padding: 0;
+}
+
+.page1 {
+    min-height: 100vh;
+    /* background-image: url(./image/show20.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat; */
+}
+p#skilltext {
+    padding-bottom: 80px;
+}
+
+.img2003{
+    position: fixed;
+    float: right;
+}
+/*装飾のスタイルは省いています。*/
+/* .text__icon {
+    display:inline-block;
+    vertical-align: middle;
+  }
+  .text__link {
+    display: inline;
+    vertical-align: middle;
+  } */
+
+  /* .section {
+      display: inline;
+  } */
+
+  .section .in {
+      padding: 10px 10px;
+  }
+
+  .section .section-title-block {
+      text-align: center;
+      margin-bottom: 30px;
+  }
+
+  .section .section-title {
+      text-transform: lowercase;
+      letter-spacing: .2em;
+      display: inline-block;
+      font-size: 36px;
+      margin-bottom: 10px;
+  }
+
+  .section .section-desk {
+      text-align: center;
+  }
+
+  #show20{
+      margin: 10px;
+      padding: 10px;
+  }
+
+p.create {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  
+/*2003*/

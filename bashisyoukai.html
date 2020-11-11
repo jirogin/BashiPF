@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="./bashisyoukai.css">
     <link rel="stylesheet" href="slick-theme.css" type="text/css">
     <link rel="stylesheet" href="slick.css" type="text/css">
+    <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/fashion.jpg" playsinline autoplay muted loop>
+    <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/fashion.webm" type="video/webm">
+    <source src="http://thenewcode.com/assets/videos/fashion.mp4" type="video/mp4"> </video> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="bashisyoukai.js"></script>
     <script src="slick.js"></script>
+    <script src="jquery.scrollablelink.js" type="text/javascript"></script>
     <title>自己紹介サイト</title>
 </head>
 
@@ -23,35 +27,42 @@
     </div>
 
     <!--サイトのヘッダ画像を設定-->
-    <header>
-        <img src="image/bashisaboutC.png" id="header">
+    <!-- <header>
+        <p id="bashis"></p>
+        <p><img src="image/bashisaboutC.png" width="30%" height="30%" id="header"></p>
     </header>
-
+ -->
     <!--topクラスを作成-->
-    <div class="top">
-    </div>
+     <div class="top">
+    </div> 
 
     <!--タグをまとめたタグ mainタグを作成-->
     <div class="main">
+        <div class="img2003">
+            <img src="./image/left2003.png" alt="2003" width="65%" height="100%" class="imgright">
+        </div>
 
+        <div class="page1">
         <!--innerタグを作成-->
         <div id="inner" class="inner">
             <!--h2タグで小見出しを作成-->
-            <h2>introduction</h2>
+            <h2 id="introP">introduction</h2>
+
             <!--グレーのラインを引く-->
-            <hr class="grey-line">
+           <hr class="grey-line">
 
             <div class='container'>
                 <div class='single-item'>
                     <!--自己紹介画像を貼る-->
-                    <img src="./image/kiseki1.jpg" width="37.5%" height="25%" class="main-img">
-                    <img src="./image/show2.jpg" width="37.5%" height="25%" class="main-img">
-                    <img src="./image/show3.jpg" width="37.5%" height="25%" class="main-img">
-                    <img src="./image/show4.jpg" width="37.5%" height="25%" class="main-img">
-                    <img src="./image/show6.jpg" width="37.5%" height="25%" class="main-img">
-                    <img src="./image/photo3.JPG" width="37.5%" height="25%" class="main-img">
-                    <img src="./image/S__7528457.jpg" width="37.5%" height="25%" class="main-img">
-                    <img src="./image/kiseki2.jpg" width="37.5%" height="25%" class="main-img">  
+                    <img src="./image/kiseki1.jpg" width="40%" height="28%" class="main-img">
+                    <img src="./image/show10.jpg" wodth="40%" height="28%" class="main-img">
+                    <img src="./image/show2.jpg" width="40%" height="28%" class="main-img">
+                    <img src="./image/show3.jpg" width="40%" height="28%" class="main-img">
+                    <img src="./image/show4.jpg" width="40%" height="28%" class="main-img">
+                    <img src="./image/show6.jpg" width="40%" height="28%" class="main-img">
+                    <img src="./image/photo3.JPG" width="40%" height="28%" class="main-img">
+                    <img src="./image/S__7528457.jpg" width="40%" height="28%" class="main-img">
+                    <img src="./image/kiseki2.jpg" width="40%" height="28%" class="main-img">  
                 </div>
             </div>
 
@@ -89,49 +100,160 @@
                     </tr>
                     <tr>
                         <th>[Qualification]</th>
-                        <td>ITパスポート</td>
+                        <td>ITパスポート, 英検3級</td>
+                    </tr>
+                    <tr>
+                        <th><br></th>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <th><br></th>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <th><br></th>
+                        <td><br></td>
                     </tr>
                 </table>
-            　<!--グレーのラインを引く-->
-            <hr class="grey-line">
+            </div>
 
-            <!--id,class skillsを作成-->
+                <!--id,class skillsを作成-->
             <div id="skills" class="skills">
                 <!--小見出しSkillsを作成-->
                 <h2>Skills</h2>
+
                 <!--スキルをレーダーチャート化した画像を貼り付け width height で横幅と縦幅調整-->
-                <img src="./image/skillgraph102.png" width="56.25%" height="37.5%" id="chart">
+                <img src="./image/skillgraph102.png" width="60%" height="60%" id="chart">
+                <p id="skilltext">主にHTML,CSS,JSを使用してのサイトフロントエンド部分作成や、</br>Adobe XDなどを使用してのデザイン作成ができます。</p>
                 </div>
 
                 <!--グレーのラインを引く-->
                 <hr class="grey-line">
 
-                <!--id class creationを作成-->
-            <div id="creation" class="creation">
-                <!--小見出し Creationを作成-->
                 <h2>Creation</h2>
 
-                <!--id creation1を作成-->
-                <div id="creation1">
-                
-                <!--咲く生物の例としてトラソルログイン画面の画像を貼り付け、width height で横幅、縦幅を調整-->
-                <img src="./image/syoukaidesign.png" width="40%" height="40%" >
-                <!--pタグで文字列入力-->
-                <p>悩み相談サイト"トラソル"ログイン画面デザイン作成　　-Adobe Xd</p>
+                <a>
+                    <img src="./image/N1_2.png" id="one" width="40%" height="40%">
+                    <p>プロジェクトN 1~2月 推しスポット紹介サイト -Google site, Adobe Xd<br>主にデザインを担当</p>
+                </a>
+
+                <a>
+                    <img src="./image/proN11.png" id="two" width="40%" height="40%">
+                    <p>プロジェクトN 11~12月 ヘルスケアゲーム<br>ファシリテーターを担当</p>
+                </a>
+
+                <a>
+                    <img src="./image/swiftcreate.png" id="three" width="50%" height="50%">
+                    <p>(左)電卓アプリ　一言掲示板アプリ(右) 作成<br>- swift5</p>
+                </a>
+
+       <!--  <section class="section" id="creation0" >
+            <div class="in">
+                <div class="section-title-block"> -->
+                    <!--小見出し Creationを作成-->
+                    <!-- <h2>Creation</h2>
+                </div>
+                <div class="card-wrapper my-gallery">
+                    <figure class="card">
+                        <img src="./image/show20.jpg" alt="" width="40%" height="40%">
+                        <figcaption class="card-caption">
+                            <table class="create">
+                                <tr>
+                                    <th>サイト</th>
+                                </tr>
+                                <tr>
+                                    <th>担当</th>
+                                    <td>デザイン</td>
+                                </tr>
+                            </table>
+                            <p class="create">概要
+                                <br>〜〜〜〜ーーーー
+                            </p>
+                        </figcaption>
+                    </figure>
                 </div>
 
+                <div class="card-wrapper my-gallery">
+                    <figure class="card">
+                        <img src="./image/show20.jpg" alt="" width="40%" height="40%">
+                        <figcaption class="card-caption">
+                            <table class="create">
+                                <tr>
+                                    <th>サイト</th>
+                                </tr>
+                                <tr>
+                                    <th>担当</th>
+                                    <td>デザイン</td>
+                                </tr>
+                            </table>
+                            <p class="create">概要
+                                <br>〜〜〜〜ーーーー
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section> -->
+                <!--id class creationを作成-->
+           <!-- <div id="creation" class="creation"> -->
+
+                <!--id creation1を作成-->
+                <!-- <div id="creation1"> -->
+                <!--咲く生物の例としてトラソルログイン画面の画像を貼り付け、width height で横幅、縦幅を調整-->
+                <!-- <img src="./image/N1_2.png" width="30%" height="30%" > -->
+                <!--pタグで文字列入力-->
+                <!-- <p>プロジェクトN 1.2月 押しスポット紹介サイト デザイン作成　-Google site</p>
+                </div> -->
+
                 <!--id creation2を作成-->
-                <div id="creation2">
+                <!-- <div id="creation2"> -->
                 <!--imgタグで画像を貼り付け、横幅縦幅調整-->
-                <img src="./image/kyoudou.png" width="40%" height="40%">
+                <!-- <img src="./image/kyoudou.png" width="30%" height="30%">
                 <p>共同ポートフォリオ作成　　-HTML5, CSS3</p>
                 </div> 
+ -->
+                <!-- <div id="creation3"> -->
+                    <!--咲く生物の例としてトラソルログイン画面の画像を貼り付け、width height で横幅、縦幅を調整-->
+                    <!-- <img src="./image/N1_2.png" width="30%" height="30%" > -->
+                    <!--pタグで文字列入力-->
+                    <!-- <p>プロジェクトN 1.2月 押しスポット紹介サイト デザイン作成　-Google site</p>
+                    </div> -->
 
+                <!-- <div id="creation4"> -->
+                    <!--咲く生物の例としてトラソルログイン画面の画像を貼り付け、width height で横幅、縦幅を調整-->
+                   <!--  <img src="./image/N1_2.png" width="30%" height="30%" > -->
+                    <!--pタグで文字列入力-->
+                    <!-- <p>プロジェクトN 1.2月 押しスポット紹介サイト デザイン作成　-Google site</p>
+                    </div> -->
+                </div>
+
+                <hr class="grey-line">
+
+                <section class="section" id="personal" >
+                    <div class="in">
+                <div class="section-title-block">
+                    <!--小見出し Creationを作成-->
+                    <h2>Personal activity</h2>
+                </div>
+                <div class="card-wrapper my-gallery">
+                    <figure class="card">
+                        <h3>ショーモデル</h3>
+                        <img src="./image/show20.jpg" alt="" width="40%" height="40%"id="show20">
+                        <figcaption class="card-caption">
+                            <p class="create">2019.12.23.
+                                <br>大阪中央公会堂で開催されたCREATOUS MAGAZINE COLLECTIONにモデルとして出演させていただきました。
+                                <br>(写真右から3番目)
+                                <br>4月にはOSAKA STREET COLLECTIONの協賛ステージに出演が内定するなど、意欲的に活動しています。
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
+                </section>
+                
 
             <hr class="grey-line">
 
-            <div id="contact" class="contact">
                 <h2>Contact</h2>
 
                 <a href="https://twitter.com/AIUsullivan" target="_blank" rel="noopener">
@@ -141,10 +263,11 @@
                 <a href="https://www.facebook.com/profile.php?id=100012896296863" target="_blank" rel="noopener">
                     <img src="./image/facebook0.png" id="facebook">
                 </a>
-            </div>
 
-        </div>
-    </div>
+                <a href="https://www.instagram.com/icon_tonjiru/?hl=ja" target="_blank" rel="noopener">
+                    <img src="./image/instagram.png" id="insta">
+                </a>
+
 
     <!--topへ戻るボタン-->
 
@@ -159,7 +282,8 @@
     <!--footer-->
     <footer>
         <!--"&copy; "とかくと©︎になる-->
-        <p>© 2019 BASHI All rights reserved.</p>
+        <p>© 2020 BASHI All rights reserved.</p>
     </footer>
+    </div>
 </body>
 </html>
